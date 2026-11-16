@@ -42,6 +42,8 @@ Change the pattern in **Project Settings > Workflow Analyzer**:
 - To turn the check off without disabling the rule, clear the pattern.
 - If the pattern is not a valid regular expression, the rule reports that once instead of checking.
 
+The default is set for Danish organisations. See [Defaults and other countries](https://github.com/sorenbcoding/privacy-compliance-rules#defaults-and-other-countries).
+
 ## Example message
 
 ```
