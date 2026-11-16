@@ -47,6 +47,8 @@ The same parameters and defaults as [`SB-SEC-003`](https://github.com/sorenbcodi
 
 Each rule has its own copy of the parameters, so set both rules to the same lists. Do it centrally through the Workflow Analyzer tab of your Automation Ops Studio policy. See the [governance baseline](https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/governance-baseline.md).
 
+The default is set for Danish organisations. See [Defaults and other countries](https://github.com/sorenbcoding/privacy-compliance-rules#defaults-and-other-countries).
+
 ## Example message
 
 ```

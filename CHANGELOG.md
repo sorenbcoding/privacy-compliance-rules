@@ -5,6 +5,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ## [Unreleased]
 
+### Changed
+- The README and rule pages state that the defaults are set for Danish organisations, and which parameters to change elsewhere. (#28)
+
 ## [2.1.0] - 2026-11-13
 
 ### Added
