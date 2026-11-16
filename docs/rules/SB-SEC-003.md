@@ -51,6 +51,8 @@ If a name is not about a person, for example `StudieNavn` (a programme's name), 
 - Set both lists centrally for every developer through the Workflow Analyzer tab of your Automation Ops Studio policy. See the [governance baseline](https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/governance-baseline.md).
 - [`SB-SEC-004`](https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/rules/SB-SEC-004.md) uses the same parameter keys, so set both rules to the same lists.
 
+The default is set for Danish organisations. See [Defaults and other countries](https://github.com/sorenbcoding/privacy-compliance-rules#defaults-and-other-countries).
+
 ## Example messages
 
 ```

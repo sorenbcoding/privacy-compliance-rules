@@ -57,6 +57,8 @@ The secret property names (`Password`, `ApiKey`, …) are built in.
 
 Set the list centrally through the Workflow Analyzer tab of your Automation Ops Studio policy. See the [governance baseline](https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/governance-baseline.md).
 
+The default is set for Danish organisations. See [Defaults and other countries](https://github.com/sorenbcoding/privacy-compliance-rules#defaults-and-other-countries).
+
 ## Example message
 
 ```

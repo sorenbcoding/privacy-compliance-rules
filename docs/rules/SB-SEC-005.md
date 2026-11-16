@@ -52,6 +52,8 @@ Use a service in an approved region. If the service is approved by your organisa
 
 See the [governance baseline](https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/governance-baseline.md) for the full setup.
 
+The default is set for Danish organisations. See [Defaults and other countries](https://github.com/sorenbcoding/privacy-compliance-rules#defaults-and-other-countries).
+
 ## Example messages
 
 ```
