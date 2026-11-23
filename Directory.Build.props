@@ -1,7 +1,17 @@
 <Project>
-  <!-- Shared package metadata for every project in the repo. Product identity (PackageId, AssemblyName) lives in src/SorenB.Rules.Privacy/SorenB.Rules.Privacy.csproj. -->
+  <!--
+    Shared package metadata for every project in the repo.
+    Every brand value lives in this file, so a rebranded copy of the rules only overrides this file and its own branding/ assets.
+    AssemblyName, namespaces and rule IDs stay fixed in the src csproj and code.
+  -->
   <PropertyGroup>
     <Version>2.1.0</Version>
+    <BrandPackageId>SorenB.Rules.Privacy</BrandPackageId>
+    <BrandTitle>Privacy Compliance Rules</BrandTitle>
+    <BrandDescription>Workflow Analyzer rules that find personal data and other privacy risks (GDPR) in UiPath projects. By Søren Schytz Birk · UiPath Community MVP. Independent project, not affiliated with UiPath.</BrandDescription>
+    <BrandIconPath>$(MSBuildThisFileDirectory)branding\privacy-compliance-rules-light-128.png</BrandIconPath>
+    <!-- Each rule's help link. {0} is the rule ID. -->
+    <BrandDocsUrlFormat>https://github.com/sorenbcoding/privacy-compliance-rules/blob/main/docs/rules/{0}.md</BrandDocsUrlFormat>
     <Authors>Søren Schytz Birk</Authors>
     <Company>Søren Schytz Birk</Company>
     <Copyright>© 2026 Søren Schytz Birk</Copyright>

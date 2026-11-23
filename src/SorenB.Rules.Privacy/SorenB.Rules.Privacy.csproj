@@ -4,11 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>SorenB.Rules.Privacy</PackageId>
+    <!-- Brand values come from Directory.Build.props. -->
+    <PackageId>$(BrandPackageId)</PackageId>
     <RootNamespace>SorenB.Rules.Privacy</RootNamespace>
     <AssemblyName>SorenB.Rules.Privacy</AssemblyName>
-    <Title>Privacy Compliance Rules</Title>
-    <Description>Workflow Analyzer rules that find personal data and other privacy risks (GDPR) in UiPath projects. By Søren Schytz Birk · UiPath Community MVP. Independent project, not affiliated with UiPath.</Description>
+    <Title>$(BrandTitle)</Title>
+    <Description>$(BrandDescription)</Description>
     <PackageTags>UiPath;RPA;Workflow Analyzer;GDPR;Privacy;Compliance;Security</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -16,8 +17,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\branding\privacy-compliance-rules-light-128.png" Pack="true" PackagePath="icon.png" Visible="false" />
+    <None Include="$(BrandIconPath)" Pack="true" PackagePath="icon.png" Visible="false" />
     <None Include="..\..\README.md" Pack="true" PackagePath="" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Read by RuleMessage.DocumentationLink. -->
+    <AssemblyMetadata Include="DocsUrlFormat" Value="$(BrandDocsUrlFormat)" />
   </ItemGroup>
 
   <ItemGroup>
