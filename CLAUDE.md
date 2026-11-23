@@ -20,7 +20,7 @@ Workflow Analyzer rules for UiPath Studio that check projects for personal data 
 - `src/SorenB.Rules.Privacy/`: the rule package. Each rule lives in `Rules/` and is registered in `RegisterAnalyzerConfiguration.cs`. Messages go through `RuleMessage.Format(what, why, fix)`.
 - `tests/SorenB.Rules.Privacy.Tests/`: xUnit + NSubstitute. `BrandVoiceTests` checks every rule message against the brand voice.
 - `branding/`: logo SVG + PNG. The light 128 px PNG is the package icon.
-- `Directory.Build.props`: version and shared metadata. Product identity is in the src csproj.
+- `Directory.Build.props`: version, shared metadata and every brand value (`BrandPackageId`, `BrandTitle`, `BrandDescription`, `BrandIconPath`, `BrandDocsUrlFormat`). The src csproj reads them. `RuleMessage.DocumentationLink` reads `BrandDocsUrlFormat` through assembly metadata. A rebranded copy overrides this file only. `AssemblyName`, namespaces and rule IDs stay fixed.
 - `docs/rules/<ID>.md`: one page per rule. The rule's `DocumentationLink` points there. `docs/` also holds the enforce-on-publish and migration guides.
 - When adding a rule, also:
   - copy `docs/rules/_template.md` to `docs/rules/<ID>.md` (a test fails without it)

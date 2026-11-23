@@ -7,6 +7,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ### Changed
 - The README and rule pages state that the defaults are set for Danish organisations, and which parameters to change elsewhere. (#28)
+- The package ID, title, description, icon and help-link format are set in one place, `Directory.Build.props`, so the rules can be rebranded without touching code. The package itself is unchanged. (#31)
 
 ## [2.1.0] - 2026-11-13
 
